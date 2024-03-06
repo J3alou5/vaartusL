@@ -1,0 +1,213 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#main {
+    transition: margin-left .5s; /* Sujuv üleminek */
+    padding: 20px;
+}
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    transition: margin-left .5s; /* Sujuv üleminek külgriba avamisel ja sulgemisel */
+}
+
+.sidenav {
+    height: 100%;
+    width: 0; /* Alguses peidetud */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s; /* Sujuv laiuse muutus */
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s; /* Sujuv üleminek */
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.image-container {
+    position: relative; /* Lubab absoluutset positsioneerimist selle sees */
+    display: inline-block; /* Või "block", sõltuvalt vajadusest */
+    width: 100vh;
+}
+@media only screen and (max-width: 1538px) {
+    .image-container{
+        left: 0;
+        width: auto;
+    }
+}
+
+#r410 {
+    position: absolute; /* Absoluutne positsioneerimine konteineri suhtes */
+    top: 4.5%; /* Näide: 20px ülalt */
+    left: 4.8%; /* Näide: 20px vasakult */
+    width: 12%; /* Kasti laius */
+    height: 11%; /* Kasti kõrgus */
+    background-color: rgba(255, 0, 0, 0.5); /* Pool-läbipaistev punane */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    z-index: 1;
+}
+#r411 {
+    position: absolute; /* Absoluutne positsioneerimine konteineri suhtes */
+    top: 16%; /* Näide: 20px ülalt */
+    left: 4.8%; /* Näide: 20px vasakult */
+    width: 12%; /* Kasti laius */
+    height: 22%; /* Kasti kõrgus */
+    background-color: rgba(28, 219, 60, 0.5); /* Pool-läbipaistev punane */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    z-index: 1;
+}
+
+#r412 {
+    position: absolute; /* Absoluutne positsioneerimine konteineri suhtes */
+    top: 38.4%; /* Näide: 20px ülalt */
+    left: 4.8%; /* Näide: 20px vasakult */
+    width: 12%; /* Kasti laius */
+    height: 21%; /* Kasti kõrgus */
+    background-color: rgba(89, 15, 185, 0.5); /* Pool-läbipaistev punane */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    z-index: 1;
+}
+#r413 {
+    position: absolute; /* Absoluutne positsioneerimine konteineri suhtes */
+    top: 65.5%; /* Näide: 20px ülalt */
+    left: 4.8%; /* Näide: 20px vasakult */
+    width: 12%; /* Kasti laius */
+    height: 22%; /* Kasti kõrgus */
+    background-color: rgba(255, 153, 0, 0.5); /* Pool-läbipaistev punane */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    z-index: 1;
+}
+#r418 {
+    position: absolute; /* Absoluutne positsioneerimine konteineri suhtes */
+    top: 15.5%; /* Näide: 20px ülalt */
+    
+    left:22%;
+    width: 12%; /* Kasti laius */
+    height: 12%; /* Kasti kõrgus */
+    width:21%;
+    background-color: rgba(255, 153, 0, 0.5); /* Pool-läbipaistev punane */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    z-index: 1;
+}
+#r419 {
+    position: absolute; /* Absoluutne positsioneerimine konteineri suhtes */
+    top: 15.5%; /* Näide: 20px ülalt */
+    
+    left:22%;
+    width: 12%; /* Kasti laius */
+    height: 12%; /* Kasti kõrgus */
+    width:21%;
+    background-color: rgba(255, 153, 0, 0.5); /* Pool-läbipaistev punane */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.items {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    margin-bottom: 5%;
+    padding: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7fb6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-gar:hover .overlay {
+    opacity: 1;
+}
+
+.over-text {
+    color: rgb(0, 0, 0);
+    font-size: 140%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.over-text2 {
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+}
+
+.in-text {
+    padding: 0 20px 20px 20px;
+}
+
+.items .info-gar {
+    border-radius: 0px;
+    flex: 1;
+    background-color: #333;
+    padding-top: 5px;
+    position: relative;
+    align-items: center;
+}
